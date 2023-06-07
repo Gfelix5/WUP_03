@@ -67,6 +67,29 @@ plot(TukeyHSD(model1))
 
 There is a difference between the rows. The back row 
 
+```{r}
+# Load required package
+library(stats)
+
+# Perform ANOVA
+result <- aov(alcohol ~ Seat, data = davisdata)
+
+# Check ANOVA summary
+summary(result)
+
+
+```
+
+```{r}
+# Perform Tukey HSD test
+tukey_result <- TukeyHSD(result)
+
+# View the results
+print(tukey_result)
+
+```
+
+
 ## Conclusions
 
 
