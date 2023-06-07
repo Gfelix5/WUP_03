@@ -56,6 +56,17 @@ The people in the back are drinking a lot more than the people in the middle and
 Most people are sitting in the middle, there is 83 of them. The rest are evened out between the back and the front.
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+```{r}
+plot(TukeyHSD(model1))
+```
+
+There is a difference between the rows. The back row 
+
 ## Conclusions
 
 
