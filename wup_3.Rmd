@@ -48,6 +48,12 @@ ggplot(davisdata, aes(x = Seat, y = alcohol)) +
 
 ## Numerical Summarys 
 
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+```
+The people in the back are drinking a lot more than the people in the middle and the front. The data shows that min all equals 0, with the median the people in the back have 4 and the people in the middle have 1, the people in front have nothing. There is a big difference between the means, with the back people having the highest of almost a 10 rounded up, the people in the middle have 3, and the the people in the front have a 2 rounded up.
+
+Most people are sitting in the middle, there is 83 of them. The rest are evened out between the back and the front.
 ## Inferential Tests
 
 ## Conclusions
