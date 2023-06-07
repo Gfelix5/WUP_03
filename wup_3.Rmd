@@ -34,9 +34,9 @@ library(ggplot2)
 ```{r}
 library(ggplot2)
 
-# Create the box plot
+# Create the notched box plot with outliers colored red
 ggplot(davisdata, aes(x = Seat, y = alcohol)) +
-  geom_boxplot() +
+  geom_boxplot(notch = TRUE, outlier.colour = "red") +
   labs(title = "Alcohol Explained by Seat")
 
 ```
