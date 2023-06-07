@@ -29,6 +29,19 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```
 ## Now add in boxplot
 
+library(ggplot2)
+
+```{r}
+library(ggplot2)
+
+# Create the box plot
+ggplot(davisdata, aes(x = Seat, y = alcohol)) +
+  geom_boxplot() +
+  labs(title = "Alcohol Explained by Seat")
+
+```
+
+
 ```{r}
 basicCN + geom_boxplot()
 ```
